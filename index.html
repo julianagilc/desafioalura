@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>  
+    <main>
+        <img class="alura" src="assets/alura.png">
+        <div class="divInput">
+            <textarea id="divInput" class="textAreaInput" type="text" placeholder="Digite seu texto" ></textarea>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+            </style>
+            <div class="divAction">
+                <div class="imagemTextoAttention">
+                    <img class="attention" src="assets/exclamacao.png">
+                    <p class="textoAttention">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="divBotoes">
+                    <button id="divBotaoCripto" class="divBotao1">Criptografar</button>
+                    <button id="divBotaoCripto2" class="divBotao2">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div id="divCripto" class="divCripto">
+            <img src="assets/pessoa com diamante.png">
+            <h1 strong class="mensagem1Retangulo">Nenhuma mensagem encontrada</strong></h1>
+            <h2 class="mensagem2Retangulo">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+        </div>
+        <div id="divCriptoVazia" class="divCriptoVazio">
+            <textarea readonly id="divResposta" class="textAreaCripto"></textarea>
+            <button id="divBotaoCopiar" class="divBotao3">Copiar</button>
+        </div>
+    </main> 
+        <heading>
+        </heading>
+    <footer></footer> 
+      <script src="app.js"></script>
+</body>
+</html>

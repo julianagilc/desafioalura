@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    height: calc(100% - 80px);
+    display: flex;
+    gap:80px;
+    padding: 40px;
+    }
+    
+.alura {
+    width: 129px;
+    height: 48px;
+    }
+
+.divBotoes {
+   display: flex;
+   gap: 24px; 
+}
+
+.imagemTextoAttention {
+    align-items: baseline;
+    flex-direction: row;
+    display: flex;
+    color:#495057;
+    font-size: 12px;
+    opacity: 0.8;
+    gap: 8px;
+}
+
+
+.divBotao1 {
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+    color:White;
+    border-radius: 24px;
+    width: 100%;
+    padding: 24px;
+    cursor: pointer;
+    }
+
+.divBotao2 {
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+    }
+
+.divBotao3 {
+    border: 1px solid #0A3871;
+    background-color: transparent;
+    color: #0A3871;
+    width: 100%;
+    border-radius: 24px;
+    padding: 24px;
+    cursor: pointer;
+    width: 336px;
+    height: 67px;
+    top: 885px;
+    left: 1032px;
+    margin: 32px;
+}
+
+
+button.divBotao2:focus{
+    background-color: transparent;
+    }
+
+.divInput {
+    margin: 12px;
+    padding: 12px;
+    display: flex;   
+    flex-direction: column;
+   
+}
+
+.divAction {
+    gap: 16px;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.divCripto {
+    border: none;
+    justify-content: left;
+    padding: 32px;
+    border-radius: 32px ;
+    background-color: white;
+    opacity: 0px;
+    text-align: center;
+    display: block;
+
+    
+    .mensagem1Retangulo {
+        color: #343a40;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin: 32px 0 16px 0;
+    }
+    
+    .mensagem2Retangulo {
+        color: #495057;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.divCriptoVazio {
+    border: none;
+    padding: 32px;
+    border-radius: 32px ;
+    background-color: white;
+    display: none;
+    text-align: center;
+    }
+
+textarea.textAreaCripto { 
+    border: none;
+    resize: none;
+    outline: 0;
+    background-color:transparent;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    width: 336px;
+    height: 508px;
+    top: 72px;
+    left: 1032px;
+    width: 336px;
+}
+
+body {
+    height: 100vh;
+    background-color: #F3F5FC;
+    color: #0a3871;
+}
+
+
+textarea {
+    border: none;
+    resize: none;
+    outline: 0;
+    background-color:transparent;
+    flex: 1;
+    font-size: 32px;   
+    width: 680px;
+    height: 48px;
+    color:#0A3871;
+}
+
+textarea::placeholder {
+    color:#0A3871;
+}

@@ -4,6 +4,12 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-color: #F3F5FC;
+    color: #0a3871;
+}
+
 main {
     height: calc(100% - 80px);
     display: flex;
@@ -22,8 +28,7 @@ main {
 }
 
 .imagemTextoAttention {
-    align-items: baseline;
-    flex-direction: row;
+    align-items: center;
     display: flex;
     color:#495057;
     font-size: 12px;
@@ -46,8 +51,8 @@ main {
     border: 1px solid #0A3871;
     background-color: #D8DFE8;
     color: #0A3871;
-    width: 100%;
     border-radius: 24px;
+    width: 100%;
     padding: 24px;
     cursor: pointer;
     }
@@ -60,11 +65,6 @@ main {
     border-radius: 24px;
     padding: 24px;
     cursor: pointer;
-    width: 336px;
-    height: 67px;
-    top: 885px;
-    left: 1032px;
-    margin: 32px;
 }
 
 
@@ -77,7 +77,7 @@ button.divBotao2:focus{
     padding: 12px;
     display: flex;   
     flex-direction: column;
-   
+    flex: 1;
 }
 
 .divAction {
@@ -88,14 +88,14 @@ button.divBotao2:focus{
 
 
 .divCripto {
-    border: none;
-    justify-content: left;
     padding: 32px;
     border-radius: 32px ;
     background-color: white;
-    opacity: 0px;
-    text-align: center;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
 
     
     .mensagem1Retangulo {
@@ -114,12 +114,12 @@ button.divBotao2:focus{
 }
 
 .divCriptoVazio {
-    border: none;
     padding: 32px;
     border-radius: 32px ;
     background-color: white;
     display: none;
-    text-align: center;
+    flex-direction: column;
+    width: 400px;
     }
 
 textarea.textAreaCripto { 
@@ -130,13 +130,14 @@ textarea.textAreaCripto {
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    width: 336px;
-    height: 508px;
-    top: 72px;
-    left: 1032px;
-    width: 336px;
+    flex: 1;
 }
 
+body {
+    height: 100vh;
+    background-color: #F3F5FC;
+    color: #0a3871;
+}
 body {
     height: 100vh;
     background-color: #F3F5FC;
@@ -151,8 +152,6 @@ textarea {
     background-color:transparent;
     flex: 1;
     font-size: 32px;   
-    width: 680px;
-    height: 48px;
     color:#0A3871;
 }
 

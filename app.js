@@ -3,8 +3,14 @@ let divCriptoVazio = document.getElementById('divCriptoVazia');
 
 document.getElementById('divBotaoCripto').addEventListener('click', function() {
    let conteudo = document.getElementById('divInput').value;
+   
    if(conteudo){
-      trocaDivDeLugar('existeConteudo')
+      if (validarTexto(conteudo.trim())) {
+         trocaDivDeLugar('existeConteudo');
+         document.getElementById('divResposta').value = criptografar(conteudo);
+     } else {
+         alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
+     }
    } else {
       trocaDivDeLugar()
    }
@@ -13,7 +19,12 @@ document.getElementById('divBotaoCripto').addEventListener('click', function() {
 document.getElementById('divBotaoCripto2').addEventListener('click', function() {
    let conteudo = document.getElementById('divInput').value;
    if(conteudo){
-      trocaDivDeLugar('existeConteudo')
+      if (validarTexto(conteudo.trim())) {
+         trocaDivDeLugar('existeConteudo');
+         document.getElementById('divResposta').value = descriptografar(conteudo);
+     } else {
+         alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
+     }
    } else {
       trocaDivDeLugar()
    }
@@ -22,9 +33,9 @@ document.getElementById('divBotaoCripto2').addEventListener('click', function() 
 function trocaDivDeLugar(situacao) {
    if(situacao === 'existeConteudo'){
       divCripto.style.display = 'none';
-      divCriptoVazio.style.display = 'block';
+      divCriptoVazio.style.display = 'flex';
    } else {     
-      divCripto.style.display = 'block';
+      divCripto.style.display = 'flex';
       divCriptoVazio.style.display = 'none';
       setTimeout(() => {
          alert("Digite um texto!")     
@@ -59,27 +70,6 @@ function validarTexto(texto) {
    }
    return true;
 }
-
-document.getElementById('divBotaoCripto').addEventListener('click', function() {
-   let textoInput = document.getElementById('divInput').value;
-   
-   if (validarTexto(textoInput)) {
-       document.getElementById('divResposta').value = criptografar(textoInput);
-   } else {
-       alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
-   }
-});
-
-document.getElementById('divBotaoCripto2').addEventListener('click', function() {
-   let textoInput = document.getElementById('divInput').value;
-   
-   if (validarTexto(textoInput)) {
-       document.getElementById('divResposta').value = descriptografar(textoInput);
-   } else {
-       alert("Por favor, insira apenas letras minúsculas sem acentos ou caracteres especiais.");
-   }
-});
-
 
 document.getElementById('divBotaoCopiar').addEventListener('click', function() {
    const textoArea = document.getElementById('divResposta');
